@@ -1,0 +1,6 @@
+{
+  "method": "tfidf",
+  "num_candidates": 100,
+  "vocab_size": 2342,
+  "fit_time_seconds": 0.02
+}
