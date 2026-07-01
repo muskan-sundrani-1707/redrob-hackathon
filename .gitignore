@@ -1,0 +1,15 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Model artifacts
+artifacts/
+*.npz
+*.pth
+*.pt
+*.h5
+
+# macOS
+.DS_Store
