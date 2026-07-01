@@ -10,8 +10,8 @@ team_members:
     email: "muskansundrani123@gmail.com"
     role: "ML Engineer"
 
-github_repo: "https://github.com/muskansundrani/redrob-hackathon"
-sandbox_link: "https://huggingface.co/spaces/muskansundrani/redrob-ranker"
+github_repo: "https://github.com/muskan-sundrani-1707/redrob-hackathon"
+sandbox_link: "https://redrob-hackathon-uqe4tmxbuuglqf9z96enr6.streamlit.app"
 
 reproduce_command: "python rank.py --candidates ./data/candidates.jsonl --out ./submission.csv"
 
