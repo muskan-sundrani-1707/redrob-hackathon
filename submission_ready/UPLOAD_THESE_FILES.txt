@@ -1,0 +1,21 @@
+Redrob Hackathon — files to upload on the portal
+================================================
+
+1. RANKED CSV
+   - Rename submission.csv to YOUR_PARTICIPANT_ID.csv
+     (the ID you got when you registered on the hackathon portal)
+   - Upload that file as your ranked output.
+
+2. APPROACH PDF
+   - Upload APPROACH.pdf (approach deck).
+
+3. GITHUB + SANDBOX (enter in portal form, not as file upload)
+   - Push this repo to GitHub first.
+   - Deploy app.py to HuggingFace Spaces (see SUBMIT_GUIDE.md).
+   - Fill submission_metadata.yaml with real email, phone, links.
+
+4. METADATA
+   - Copy values from submission_metadata.yaml into the portal form.
+
+Before upload, run:
+  python validate_submission.py submission.csv

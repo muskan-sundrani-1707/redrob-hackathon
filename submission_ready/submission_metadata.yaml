@@ -1,0 +1,52 @@
+team_name: "IntelliRank"
+
+primary_contact:
+  name: "Muskan Sundrani"
+  email: "muskansundrani123@gmail.com"
+  phone: "+91-9343799712"
+
+team_members:
+  - name: "Muskan Sundrani"
+    email: "muskansundrani123@gmail.com"
+    role: "ML Engineer"
+
+github_repo: "https://github.com/muskansundrani/redrob-hackathon"
+sandbox_link: "https://huggingface.co/spaces/muskansundrani/redrob-ranker"
+
+reproduce_command: "python rank.py --candidates ./data/candidates.jsonl --out ./submission.csv"
+
+compute:
+  platform: "MacBook (Apple Silicon)"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.9"
+  os: "macOS"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: true
+  pre_computation_time_minutes: 15
+
+ai_tools_used:
+  - "Cursor"
+  - "Claude"
+
+ai_usage_summary: |
+  Used Cursor and Claude for architecture discussion, code scaffolding, and debugging.
+  No candidate data was sent to external LLM APIs during ranking. All scoring runs locally on CPU.
+
+methodology_summary: |
+  Hybrid ranker with six components: (1) title-fit gate that penalizes keyword-stuffer traps,
+  (2) trusted core-skill matching weighted by endorsements/duration/assessments,
+  (3) semantic similarity via pre-computed TF-IDF vectors,
+  (4) career quality scoring for product-company ML production evidence,
+  (5) behavioral multiplier from Redrob platform signals,
+  (6) honeypot penalty for inconsistent profiles. Title and career narrative are
+  decisive signals per JD guidance; behavioral signals modulate availability.
+  Pre-computation generates embeddings offline; ranking completes in ~2 min on CPU.
+
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true
